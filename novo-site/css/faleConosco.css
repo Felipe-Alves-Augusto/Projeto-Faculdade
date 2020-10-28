@@ -36,6 +36,11 @@ body {
 }
 
 
+
+
+
+
+
 #menu a:hover {
     background-color: #fff;
     color: #f00;
@@ -47,7 +52,6 @@ body {
     width: 100%;
     font-size: 20px;
     font-weight: bolder;
-
     background-image: url(../images/logo.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -62,7 +66,7 @@ body {
 
 ul li {
     display: inline-block;
-    padding: 25px;
+    padding: 0 25px;
 }
 
 #menu img {
@@ -152,9 +156,6 @@ form input[type="text"]:hover {
     outline: 0;
 }
 
-::-moz-placeholder {
-    color: rgb(134, 4, 4);
-}
 
 a {
     text-decoration: none;
