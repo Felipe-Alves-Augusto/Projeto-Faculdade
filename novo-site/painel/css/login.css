@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html,body{
+    height: 100%;
+}
+
+#header {
+    width: 100%;
+    background:linear-gradient(to right,#fff,#f00 );
+    color: #fff;
+    font-size: 25px;
+   
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    text-shadow: 1px 1px 1px #111111;
+}
+
+#menu a:hover {
+    background-color: #fff;
+    color: #f00;
+    text-decoration: underline;
+    text-decoration-color: #000;
+
+}
+
+#menu-mobile{
+    display: none;
+}
+
+.menu-logo{
+    display: none;
+}
+
+.clear{
+    clear: both;
+}
+
+#menu {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    background-image: url(../images/logo.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 10%;
+    border-bottom: 1px solid;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    color: #d64646;
+    text-shadow: 1px 1px 1px #111111;
+
+}
+
+#menu nav{
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+
+
+ul li {
+    display: inline-block;
+    padding: 25px;
+}
+
+#menu img {
+    width: 40px;
+}
+
+::-moz-placeholder {
+    color: rgb(134, 4, 4);
+}
+
+#menu nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+
+
+
+.box-login{
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px 2%;
+    box-sizing: 5px 5px 5px 5px #aaa;
+}
+
+.box-login form{
+    margin-top: 40px;
+}
+
+.logar{
+    text-align: center;
+    padding: 10px 2%;
+    background-color: red;
+    border: 5px solid #aaa;
+    color: #fff;
+}
+
+.input-field input[type=submit]{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    background-color: red;
+    border: 0;
+    color: white;
+}
+
+.input-field input[type=submit]:hover{
+    background-color:rgb(165, 6, 6)
+}
+
+
+.rodape{
+    background:linear-gradient(#fff,#f00 );
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    border-top: 10px solid #000;
+   
+}
+.conteudo-rodape h3{
+    font-size: 25px;
+}
+
+.conteudo-rodape p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.conteudo-rodape a{
+    color: rgb(160, 156, 156);
+}
+
+.conteudo-rodape a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+.conteudo-rodape img{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 5px;
+        margin-left: 5px;
+       
+
+}

@@ -15,7 +15,8 @@ body {
 .lado{
     
     width: 20%;
-    height:auto;
+    height:100vh;
+    line-height: 100%;
     float: left;
     background-color: #f00;
 }
@@ -66,13 +67,6 @@ body {
     
 }
 
-
-
-.lado i{
-    color: #fff;
-    font-size: 15px;
-   
-}
 
 .lado a{
     color: #fff;

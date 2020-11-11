@@ -9,7 +9,7 @@ form.addEventListener('submit', ()=>{
 
     if(nome_prod.value == ""){
 
-        alert('campos obrigatorios')
+        alert('campos obrigatorios');
 
     }
 

@@ -1,8 +1,6 @@
 <?php
 
     $pdo = new PDO('mysql:host=localhost;dbname=empresa', 'root', '');
-
-
     /*
     $tables = $pdo->query("SHOW TABLE");
 
@@ -19,10 +17,10 @@
     $sql = "CREATE TABLE Produtos (
 
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        nome_produto VARCHAR(30),
-        preco FLOAT(10),
-        quantidade INT(6),
-        cod_barras INT(70)
+        nome_produto VARCHAR(30) NOT NULL,
+        preco FLOAT(10) NOT NULL,
+        quantidade INT(6) NOT NULL,
+        cod_barras INT(70) NOT NULL
 
 
     )";
@@ -44,13 +42,6 @@
     }
 
 
-    
-
-
-
-
-     
-
 ?>
 
 
@@ -61,7 +52,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcionario</title>
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="../css/register.css">
 </head>
 <body>
 <div id="header">
@@ -71,10 +62,10 @@
     <div id="menu">
         <nav>
             <ul>
-                <li><a href="index.html" target="_self">Home</a></li>
-                <li><a href="doacao.html" target="_self">Doações</a></li>
-                <li><a href="Produtos.html" target="_self">Produtos</a></li>
-                <li><a href="faleConosco.html" target="_self">Fale Conosco</a></li>
+                <li><a href="../index.html" target="_self">Home</a></li>
+                <li><a href="../doacao.html" target="_self">Doações</a></li>
+                <li><a href="../Produtos.html" target="_self">Produtos</a></li>
+                <li><a href="../faleConosco.html" target="_self">Fale Conosco</a></li>
             </ul>
         </nav>
     </div>
@@ -95,7 +86,7 @@
 
     <div class="add">
         <div class="container">
-            <h2>Adionar Produtos no sistema</h2>
+            <h2>Adicionar Produtos no sistema</h2>
             <form id="form_produtos" action="" method="post">
                 <div class="w50">
                     <input type="text" id="nome_prod" name="nome_prod" placeholder="Nome do Produto:">

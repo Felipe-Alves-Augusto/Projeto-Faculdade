@@ -1,0 +1,1 @@
+<h1>BEM VINDO AO PAINEL DE CONTROLE<?php echo $_SESSION['user'];?></h1>;
