@@ -13,26 +13,32 @@ body {
 
 
 .flex-section{
-
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.container{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
 #header {
     width: 100%;
-    background:linear-gradient(to right,#fff,#f00 );
+    background:linear-gradient(to right,#fff,#f00);
     color: #fff;
     font-size: 25px;
   
     font-weight: bolder;
     text-align: center;
-    border-bottom: 1px solid #fff;
     text-shadow: 1px 1px 1px #111111;
 }
 
 #menu a:hover {
-    background-color: #fff;
-    color: #f00;
+    color: #000!important;
     text-decoration: underline;
     text-decoration-color: #000;
 }
@@ -47,19 +53,11 @@ body {
 
 #menu {
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bolder;
-    
-    background-image: url(../images/logo.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 230px;
-    border-bottom: 1px solid;
     text-align: center;
-    border-bottom: 1px solid #fff;
-    background-color: #fff;
-    color: #d64646;
     text-shadow: 1px 1px 1px #111111;
+    background-color: #d50000;
 }
 
 ul li {
@@ -77,15 +75,14 @@ ul li {
 
 a {
     text-decoration: none;
-    color: #000;
-
+    color: #fff!important;
     font-weight: bolder;
 }
 
 .banner {
     width: 100%;
-    height: 557px;
-    background-image: url(https://media.gazetadopovo.com.br/rodrigo-constantino/2016/09/blog-1181-1024x671-4673161e.jpg);
+    height: 500px;
+    background-image: url(../images/38471.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -99,140 +96,158 @@ a {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
+        
 }
 
 .overplay h1{
         color: #fff;
         text-align: center;
-        margin-top: 10%;
-        font-size: 50px;
+        margin-top: 12%;
+        font-size: 35px;
+        text-shadow: 5px 5px 5px #000;
   
 }
 
 
-/********************************** formatação da sessao 1 *******************************/
-.sessao1{
-        width: 80%;
-  
-        margin: 0 80px;
-      
-       border-bottom: 2px solid;
+.sobre{
+    padding: 50px 3%;
+    text-align: center;
 }
 
-.conteudo1 h2{
-        font-size: 50px;
-       
-        margin-top: 20px;
-        color: #000;
-}
-
-.conteudo1 p{
-        font-size: 25px;
-        margin: 20px 0;
-       
-      
-      
-        font-weight: 400;
-}
-
-.foto-flex{
-    width: 100%;
-    margin: 30px 60px;
-    position: relative;
-    top: 50%;
-    
-   
-   
-}
-
-.foto-flex img{
-        width:calc(100% + 50px);
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7)
-}
-
-/************************************ formatação da sessao2**************************************************/
-.sessao2 .conteudo2{
-    width: 33.3%;
-    float: left;
-    padding: 40px 2%;
-
-}
-
-.titulo-sessao2{
-        padding: 0 2%;
-        text-align: center;
-        margin-top: 40px;
-        color: #000;
-        font-size: 45px;
-       
-
-}
-
-
-
-.conteudo2 i{
-    font-size: 200px;
+.sobre h1{
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
+    font-size: 27px;
 }
 
-.conteudo2 p{
-        text-align: center;
-        color:#000;
-        font-size: 25px;
+.sobre p,.doacao p{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.delivery{
+    background-image: url(../images/delivery2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 5px 5px 5px #000;
+    position: relative;
+}
+
+.delivery  h2{
+    padding-top: 10%;
     
-        font-weight: bold;
-       
 }
 
-/****************************** botao doar ****************************/
+.doacao{
+    padding: 50px 3%;
+    text-align: center;
+}
 
-.btn{
+.doacao h2{
+    font-size: 27px;
+}
+
+.doacao p{
+    margin-top:10px;
+}
+
+
+.contribuicao{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.btn-doar{
+    width: 100%;
+    max-width: 20%;
+    margin: 0 auto;
+}
+
+.btn-doar button{
+    width: 100%;
+    height: 50px;
+}
+
+.form-doar{
+    width: 100%;
+    max-width: 50%;
+    padding: 30px 2%;
+    box-shadow: 0px 0px 50px #111;
+    opacity: 0;
+    transition: 1s;
+    margin: 40px auto;
+}
+
+.text-form{
+    padding: 10px 2%;
+}
+
+.text-form h2{
+    font-size: 22px;
+    text-align: center;
+}
+
+.error{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.form-group input[type=submit]{
+    height: 55px;
+}
+
+.box-sucesso{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
-    padding: 20px;
-
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    display: none;
 }
 
-.btn input{
-        width: 20%;
-        padding: 20px;
-        margin-top: 30px;
-        border-radius: 5px;
-        outline: 0;
-        border: 0;
-        background-color:#f00 ;
-        color: #fff;
-        font-size: 30px;
-       
-        cursor: pointer;
+.box-sucesso h2{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 40%;
+    padding: 20px 0;
+    border-radius: 15px;
+    
 }
 
-.btn input:hover{
-        background-color:#7c2121;
+.box-sucesso h2 button{
+    margin-top: 7px;
 }
 
+#sucesso{
+    position: fixed;
+}
 
 .rodape{
     background:linear-gradient(#fff,#f00 );
     width: 100%;
     padding: 40px;
     text-align: center;
-    border-top: 10px solid #000;
-    
+    clear: both;
    
 }
 .conteudo-rodape h3{
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .conteudo-rodape p{
-    font-size: 18px;
+    font-size: 14px;
     margin: 10px 0;
 }
 
@@ -245,8 +260,8 @@ a {
     color: #fff;
 }
 .conteudo-rodape img{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         position: relative;
         top: 5px;
         margin-left: 5px;
@@ -309,9 +324,8 @@ a {
 
     .menu-logo i {
         font-size: 25px;
-        background-color: #111;
         padding: 16px;
-        color: #fff;
+        color: #f00;
         cursor: pointer;
       
     }
@@ -332,62 +346,7 @@ a {
         height: 400px;
     }
 
-    .sessao1{
-        width: 100%;
-        margin: 0;
-    }
-
-    .flex-section{
-        display: block;
-    }
-
-    .conteudo1{
-        width: 100%;
-    }
-
-
-    .foto-flex{
-        width: 100%;
-        margin: 0;
-        position: static;
-        padding: 0 2%;
-        
-    }
-
-    .foto-flex img{
-        width: 100%;
-        margin-bottom: 0;
-        border-radius: 0;
-        box-shadow: 0px 0px 0px 0px;
-        
-    }
-
-    .sessao2 h3{
-        font-size: 22px;
-    }
-
-    .sessao2 .conteudo2{
-        width: 100%;
-        float: none;
-        padding: 0 2%;
-    }
-
-    .conteudo2{
-        margin: 25px 0 ; 
-    }
-
-    .conteudo2 i{
-        font-size: 100px;
-    }
-
-    .btn{
-        padding: 0;
-    }
-
-    .btn input{
-        width: 100%;
-        border-radius: 0;
-    }
+   
 
     
     .conteudo-rodape h3{
@@ -407,9 +366,6 @@ a {
         margin-top: 20%;
     }
 
-    .foto-flex img{
-        margin-top: 60px;
-    }
 }
 
 @media screen and (max-width:510px){
@@ -454,9 +410,9 @@ a {
 
     .menu-logo i {
         font-size: 25px;
-        background-color: #111;
+        
         padding: 16px;
-        color: #fff;
+        color: #f00;
         cursor: pointer;
       
     }
@@ -477,64 +433,30 @@ a {
         height: 400px;
     }
 
-    .sessao1{
+    .doacao h2{
+        font-size: 24px;
+    }
+
+    .btn-doar{
+        max-width: 50%;
+    }
+
+    .form-doar {
+        max-width: 100%;
+    }
+
+    .box-sucesso h2{
         width: 100%;
-        margin: 0;
+        font-size: 24px;
+
     }
 
-    .flex-section{
-        display: block;
+    .box-sucesso{
+        padding:  0 2%;
     }
 
-    .conteudo1{
-        width: 100%;
-    }
+ 
 
-
-    .foto-flex{
-        width: 100%;
-        margin: 0;
-        position: static;
-        padding: 0 2%;
-        
-    }
-
-    .foto-flex img{
-        width: 100%;
-        margin-bottom: 0;
-        border-radius: 0;
-        box-shadow: 0px 0px 0px 0px;
-        
-    }
-
-    .sessao2 h3{
-        font-size: 22px;
-    }
-
-    .sessao2 .conteudo2{
-        width: 100%;
-        float: none;
-        padding: 0 2%;
-    }
-
-    .conteudo2{
-        margin: 25px 0 ; 
-    }
-
-    .conteudo2 i{
-        font-size: 100px;
-    }
-
-    .btn{
-        padding: 0;
-    }
-
-    .btn input{
-        width: 100%;
-        border-radius: 0;
-    }
-
-    
     .conteudo-rodape h3{
         font-size: 1rem;
     }

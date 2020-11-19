@@ -15,8 +15,6 @@ body {
 .lado{
     
     width: 20%;
-    height:100vh;
-    line-height: 100%;
     float: left;
     background-color: #f00;
 }
@@ -25,12 +23,9 @@ body {
     width: 100%;
     list-style-type: none;
     background-color: #f00;
-    margin-top:70px ;
+    margin-top:70px;
     
 }
-
-
-
 
 #menu-mobile{
     display: none;
@@ -55,8 +50,7 @@ body {
 }
 
 
-.lado li   {
-    padding-top: 40px;
+.lado li{
     display:block;
     border-bottom:1px solid #d64646;
 }
@@ -79,16 +73,13 @@ body {
     background:linear-gradient(to right,#fff,#f00 );
     color: #fff;
     font-size: 25px;
-
     font-weight: bolder;
     text-align: center;
-    border-bottom: 1px solid #fff;
     text-shadow: 1px 1px 1px #111111;
 }
 
 #menu a:hover {
-    background-color: #fff;
-    color: #f00;
+    color: #000!important;
     text-decoration: underline;
     text-decoration-color: #000;
 
@@ -96,18 +87,10 @@ body {
 
 #menu {
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bolder;
-
-    background-image: url(../images/logo.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 230px;
-    border-bottom: 1px solid;
     text-align: center;
-    border-bottom: 1px solid #000;
-    background-color: #fff;
-    color: #d64646;
+    background-color: #d50000;
     text-shadow: 1px 1px 1px #111111;
 }
 
@@ -126,7 +109,7 @@ ul li {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #fff!important;
 
     font-weight: bolder;
 }
@@ -149,7 +132,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .overplay h1{
@@ -255,14 +238,14 @@ input[type=number]::-webkit-inner-spin-button {
 
 .special-products-grid h4 a {
     font-weight: 600;
-    color: #2E2E2E;
+    color: #2E2E2E!important;
     margin: 0 0 1em;
     display: block;
 }
 
 .special-products-grid h4 a:hover {
     text-decoration: none;
-    color: #FE3026;
+    color: #FE3026!important;
 }
 
 .product-btn {
@@ -327,17 +310,15 @@ h4, a{
     width: 100%;
     padding: 40px;
     text-align: center;
-    border-top: 10px solid #000;
-   
     clear: both;
    
 }
 .conteudo-rodape h3{
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .conteudo-rodape p{
-    font-size: 18px;
+    font-size: 14px;
     margin: 10px 0;
 }
 
@@ -350,17 +331,14 @@ h4, a{
     color: #fff;
 }
 .conteudo-rodape img{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         position: relative;
         top: 5px;
         margin-left: 5px;
        
 
 }
-    
-
-
 
 @media screen and (max-width:768px){
 
@@ -408,9 +386,8 @@ h4, a{
 
     .menu-logo i {
         font-size: 25px;
-        background-color: #111;
         padding: 16px;
-        color: #fff;
+        color: #f00;
         cursor: pointer;
       
     }
@@ -524,9 +501,8 @@ h4, a{
 
     .menu-logo i {
         font-size: 25px;
-        background-color: #111;
         padding: 16px;
-        color: #fff;
+        color: #f00;
         cursor: pointer;
       
     }
@@ -603,14 +579,6 @@ h4, a{
         display: block;
 
     }
-
-    #menu-mobile img{
-       display: inline-block;
-       margin-left:45%;
-       width: 50px;
-       margin-top: 15px;
-    }
-
     #menu-mobile ul{
         background-color: #f00;
         display: none;
@@ -635,9 +603,8 @@ h4, a{
 
     .menu-logo i {
         font-size: 25px;
-        background-color: #111;
         padding: 16px;
-        color: #fff;
+        color: #f00;
         cursor: pointer;
       
     }

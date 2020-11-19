@@ -1,5 +1,8 @@
 <?php
 
+    // classe para realizar a conexão segura com o banco de dados
+    //caso der erro nao vai expor os dados do banco como a senha e o user
+
     class MySql{
 
         private static $pdo;

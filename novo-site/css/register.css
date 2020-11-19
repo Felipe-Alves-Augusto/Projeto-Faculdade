@@ -26,17 +26,14 @@ body {
     width: 100%;
     background:linear-gradient(to right,#fff,#f00 );
     color: #fff;
-    font-size: 25px;
-  
+    font-size: 19px;
     font-weight: bolder;
     text-align: center;
-    border-bottom: 1px solid #fff;
     text-shadow: 1px 1px 1px #111111;
 }
 
 #menu a:hover {
-    background-color: #fff;
-    color: #f00;
+    color: #000!important;
     text-decoration: underline;
     text-decoration-color: #000;
 }
@@ -49,20 +46,16 @@ body {
     display: none;
 }
 
+#menu ul{
+    margin-bottom: 0;
+}
+
 #menu {
     width: 100%;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bolder;
-    
-    background-image: url(../images/logo.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 230px;
-    border-bottom: 1px solid;
     text-align: center;
-    border-bottom: 1px solid #fff;
-    background-color: #fff;
-    color: #d64646;
+    background-color: #f00;
     text-shadow: 1px 1px 1px #111111;
 }
 
@@ -80,8 +73,8 @@ ul li {
 }
 
 a {
-    text-decoration: none;
-    color: #000;
+    text-decoration:1px 1px 1px #fff;
+    color: #fff!important;
 
     font-weight: bolder;
 }
@@ -100,15 +93,11 @@ a {
 
 }
 
-.add h2{
-    color: #f00;
-}
-
 .add form{
     width: 100%;
     max-width: 600px;
-    box-shadow: 7px 7px 7px #aaa;
-    margin: 0 auto;
+    box-shadow: 0px 0px 40px #111;
+    margin: 35px auto;
     padding: 0 2%;
    
     background-color: ghostwhite;
@@ -135,18 +124,14 @@ a {
    
 }
 
-.w50 input:focus{
-    border: 1px solid black;
-}
 
 
 .add form input[type=submit]{
     width: 80%;
-    margin: 90px 0;
+    margin: 50px 0;
     height: 60px;
     cursor: pointer;
     font-size: 22px;
-    background-color: #f00;
     color: #fff;
     border: 0;
     
@@ -158,17 +143,16 @@ a {
     width: 100%;
     padding: 40px;
     text-align: center;
-    border-top: 10px solid #000;
    
     
    
 }
 .conteudo-rodape h3{
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .conteudo-rodape p{
-    font-size: 18px;
+    font-size: 14px;
     margin: 10px 0;
 }
 
@@ -187,5 +171,76 @@ a {
         top: 5px;
         margin-left: 5px;
        
+
+}
+
+
+@media screen and (max-width:510px){
+
+    #menu nav {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: block;
+
+    }
+
+
+    #menu-mobile ul{
+        background-color: #f00;
+        display: none;
+        
+        
+    }
+
+    #menu-mobile li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        border-bottom: 1px solid #fff;
+        padding: 15px 0;
+    }
+
+    #menu-mobile a{
+        color: #fff;
+    }
+
+    .menu-logo{
+        display: block;
+    }
+
+    .menu-logo i {
+        font-size: 25px;
+        padding: 16px;
+        color: #f00;
+        cursor: pointer;
+      
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .add form{
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 2%;
+    }
+
+    .w50{
+        float: none;
+        width: 100%;
+    }
+
+    .add form input[type=submit]{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .add h2{
+        font-size: 25px;
+    }
 
 }
